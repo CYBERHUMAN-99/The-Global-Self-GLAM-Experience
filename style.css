@@ -1,0 +1,596 @@
+/* ============================================================
+   THE GLOBAL SELF GLAM EXPERIENCE
+   Main Stylesheet - NEW COLOURS: Brown / Orange / Cream
+   ============================================================ */
+
+/* ---------- 1. RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #FFF7ED;
+  color: #2E1508;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- 2. TYPOGRAPHY ---------- */
+h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 20px 0 15px;
+  color: #2E1508;
+}
+h1 span { color: #C2410C; }
+
+h2 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  color: #2E1508;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: #2E1508;
+}
+
+p {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+/* ---------- 3. TOP BAR ---------- */
+.topbar {
+  background: #2E1508;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+.top-countdown {
+  background: #C2410C;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.top-countdown b {
+  font-size: 15px;
+  color: #fff;
+}
+
+/* ---------- 4. HERO SECTION ---------- */
+.hero {
+  padding: 50px 0 30px;
+  text-align: center;
+  background: linear-gradient(180deg, #FFE8D6, #FFF7ED);
+}
+
+.hero p {
+  font-size: 18px;
+  color: #444;
+}
+
+.badge {
+  background: #C2410C;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.proof-small { font-size: 13px; }
+
+/* ---------- 5. MEET YOUR COACH - THELMA - BIGGER ---------- */
+.coach-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+  border: 1px solid #FFDCC3;
+}
+
+.coach-img {
+  width: 210px;
+  height: 260px;
+  min-width: 210px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  border: 3px solid #FFDCC3;
+  display: block;
+  background: #f5f5f5;
+}
+
+.coach-text { flex: 1; min-width: 0; }
+
+.coach-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #C2410C;
+  margin-bottom: 4px;
+}
+
+.coach-name {
+  font-size: 22px;
+  margin: 0 0 4px 0;
+  color: #2E1508;
+}
+
+.coach-title {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.coach-quote {
+  font-size: 15px;
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.coach-check {
+  font-size: 13px;
+  font-weight: bold;
+  color: #C2410C;
+  margin-bottom: 0;
+}
+
+/* ---------- 6. SECTIONS ---------- */
+.section {
+  padding: 45px 0;
+  border-bottom: 1px solid #FFE8D6;
+}
+
+/* ---------- 7. CHECKLIST ---------- */
+.checklist { list-style: none; }
+
+.checklist li {
+  background: #fff;
+  border: 1px solid #FFDCC3;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.checklist li b { color: #C2410C; }
+
+/* ---------- 8. PRODUCT MOCKUP BOX ---------- */
+.mockup {
+  background: #2E1508;
+  color: #fff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.mockup h2 { color: #FFDCC3; }
+.mockup p { color: #FFE8D6; }
+.mockup-label {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #FF8A3D;
+}
+
+/* ---------- 9. MODULES & BONUSES ---------- */
+.module {
+  background: #fff;
+  border-left: 5px solid #C2410C;
+  padding: 18px;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.bonus {
+  background: #FFF3CD;
+  border: 1px dashed #E85D04;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ---------- 10. TESTIMONIALS ---------- */
+.proof-intro {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.testi {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.07);
+}
+
+.testi b { color: #C2410C; }
+.note { font-size: 14px; color: #777; }
+
+.testi-with-photo {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.testi-img {
+  width: 120px;
+  height: 150px;
+  min-width: 120px;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  border: 2px solid #FFDCC3;
+  background: #f5f5f5;
+  display: block;
+}
+
+.testi-img-wide {
+  width: 140px;
+  height: 150px;
+  min-width: 140px;
+  object-position: center center;
+}
+
+.testi-text { flex: 1; min-width: 0; }
+.testi-text p { margin-bottom: 6px; font-size: 16px; line-height: 1.5; }
+.testi-stars { color: #E85D04; font-size: 15px; letter-spacing: 1px; }
+.testi-tag { font-size: 13px; color: #777; margin-top: 5px; }
+
+.testi-highlight {
+  background: #FFF7ED;
+  border: 1px solid #FFDCC3;
+  border-left: 5px solid #C2410C;
+}
+
+/* Photo-only testimonial - fills whole card, no text */
+.testi-photo-only {
+  padding: 0;
+  overflow: hidden;
+}
+.testi-photo-only img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  object-position: center top;
+  display: block;
+  border-radius: 14px;
+}
+
+/* ---------- 11. PRICE BOX ---------- */
+.price-box {
+  background: #2E1508;
+  color: #fff;
+  border-radius: 18px;
+  padding: 30px 22px;
+  text-align: center;
+}
+
+.price-box .old {
+  text-decoration: line-through;
+  opacity: .6;
+  font-size: 18px;
+}
+
+.price-box .now {
+  font-size: 44px;
+  font-weight: bold;
+  color: #FFDCC3;
+  margin: 5px 0;
+}
+
+.secure-text { font-size: 13px; opacity: .8; }
+
+/* ---------- 12. FAQ ---------- */
+.faq {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.faq b { display: block; margin-bottom: 5px; }
+
+/* ---------- 13. FINAL CTA & FOOTER ---------- */
+.final-cta { text-align: center; }
+.footer { font-size: 13px; color: #888; }
+.spacer { height: 80px; }
+
+/* ============================================================
+   14. BUTTONS - CLICK MAGNETS
+   ============================================================ */
+.btn {
+  display: block;
+  background: #C2410C;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 20px 0;
+  box-shadow: 0 8px 20px rgba(194,65,12,.3);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn small {
+  display: block;
+  font-weight: normal;
+  font-size: 13px;
+  opacity: .9;
+  margin-top: 4px;
+}
+
+.btn:hover {
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 12px 28px rgba(194,65,12,.45);
+}
+
+.btn:active { transform: scale(0.98); }
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+  transform: skewX(-20deg);
+  animation: shine 2.8s infinite;
+}
+
+.btn-pulse { animation: pulse 1.8s infinite; }
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(194,65,12,.5); }
+  70%  { box-shadow: 0 0 0 18px rgba(194,65,12,0); }
+  100% { box-shadow: 0 0 0 0 rgba(194,65,12,0); }
+}
+
+.btn-shake { animation: nudge 3s infinite; }
+
+@keyframes nudge {
+  0%, 85%, 100% { transform: rotate(0deg); }
+  88% { transform: rotate(-2deg) scale(1.02); }
+  91% { transform: rotate(2deg) scale(1.02); }
+  94% { transform: rotate(-1deg); }
+  97% { transform: rotate(1deg); }
+}
+
+.btn-glow {
+  background: linear-gradient(90deg, #C2410C, #E85D04, #C2410C);
+  background-size: 200% 200%;
+  animation: glowMove 2.5s linear infinite;
+}
+
+@keyframes glowMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shine {
+  0%   { left: -80%; }
+  60%  { left: 130%; }
+  100% { left: 130%; }
+}
+
+/* ---------- 15. STICKY BOTTOM BUY BAR ---------- */
+.sticky-buy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid #FFE8D6;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 100;
+}
+
+.sticky-buy div { flex: 1; }
+.sticky-buy span { font-size: 13px; color: #777; }
+
+.btn-sticky {
+  margin: 0;
+  padding: 14px 20px;
+  font-size: 16px;
+  animation: bounceSticky 1.6s infinite;
+}
+
+@keyframes bounceSticky {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+/* ---------- 16. MOBILE RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  .price-box .now { font-size: 36px; }
+
+  .coach-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px 16px;
+  }
+
+  .coach-img {
+    width: 200px;
+    height: 250px;
+    min-width: 200px;
+  }
+
+  .testi-with-photo { gap: 12px; padding: 14px; }
+
+  .testi-img {
+    width: 95px;
+    height: 120px;
+    min-width: 95px;
+    min-height: 120px;
+    border-radius: 12px;
+  }
+
+  .testi-img-wide {
+    width: 110px;
+    height: 120px;
+    min-width: 110px;
+  }
+
+  .testi-text p { font-size: 15px; }
+
+  .testi-photo-only img {
+    height: 340px;
+  }
+}
+
+/* ---------- COUNTDOWN ---------- */
+#countdown, #countdown-2 {
+  color: #FFE08A;
+  font-weight: bold;
+}
+.countdown-box {
+  background: rgba(255,255,255,.1);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* ---------- FAQ ACCORDION ---------- */
+.faq {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-question span {
+  font-size: 22px;
+  color: #C2410C;
+  transition: transform 0.3s;
+}
+.faq.active .faq-question span {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  font-size: 15px;
+  color: #444;
+}
+.faq.active .faq-answer {
+  padding: 0 16px 16px 16px;
+  max-height: 200px;
+}
+
+/* ---------- SOCIAL PROOF POPUP ---------- */
+.proof-popup {
+  position: fixed;
+  bottom: 75px;
+  left: 12px;
+  right: 12px;
+  max-width: 380px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  padding: 12px 14px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  z-index: 200;
+  transform: translateY(150%);
+  transition: transform 0.5s ease;
+  border-left: 4px solid #C2410C;
+}
+.proof-popup.show {
+  transform: translateY(0);
+}
+.proof-avatar {
+  background: #FFF7ED;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.proof-popup p {
+  font-size: 14px;
+  margin: 0 0 3px 0;
+  line-height: 1.4;
+}
+.proof-popup small {
+  font-size: 12px;
+  color: #888;
+}
+#proof-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+  margin-left: auto;
+}
