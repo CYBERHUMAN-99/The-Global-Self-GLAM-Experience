@@ -45,7 +45,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 // 4. SOCIAL PROOF POPUP - rotates REAL reviews only - CHANGED: Removed 1-1, added Rose/Yetty/Ihuoma
 const proofs = [
-  { text: "I used to pay ₦30k for every event. Now I do my own glam in 45 minutes.", name: "Amaka • Lagos • Verified Student" },
+  { text: "I used to pay ₦70k for every event. Now it takes me less than hour to do my own makeup!", name: "Amaka • Lagos • Verified Student" },
   { text: "My graduation makeup ateeee, all thanks to this class.", name: "Graduation Student • Verified Student" },
   { text: "See what I did with the eyes. I'm an expert now!!!!!!", name: "Real Student • Verified Student" },
   { text: "Soft glam, done by ME. Blush, brows, lips - all me.", name: "Real Student • Verified Student" },
