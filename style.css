@@ -85,8 +85,8 @@ p {
 
 /* ---------- 4. HERO SECTION ---------- */
 .hero {
-  padding: 50px 0 30px;
-  text-align: center;
+  padding: 40px 0 30px;
+  /* text-align: center; */
   background: linear-gradient(180deg, #FFE8D6, #FFF7ED);
 }
 
@@ -252,6 +252,41 @@ p {
   border-bottom: 1px solid #FFE8D6;
 }
 
+/* ---------- THIS COULD BE YOU - JUSTIFY LIKE TUMI ---------- */
+
+.could-be-you-card {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.could-be-you-card h2 {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+}
+
+.could-be-you-intro {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+}
+
+.could-be-you-list {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.could-be-you-list li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.could-be-you-outro {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+}
+
 .could-be-you-card {
   background: #fff;
   border: 1px solid #FFDCC3;
@@ -314,6 +349,35 @@ p {
   color: #555;
   max-width: 560px;
   margin: 0 auto;
+}
+
+/* ---------- WHAT CHANGES FOR YOU - LIKE TUMI EXAMPLE ---------- */
+
+/* ---------- WHAT CHANGES FOR YOU - JUSTIFY LIKE TUMI ---------- */
+
+.changes-card {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.changes-eyebrow {
+  text-align: center;
+}
+
+.changes-card h2 {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+}
+
+.changes-list {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.changes-list li {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .changes-card {
@@ -688,11 +752,12 @@ p {
   .testi-img{
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    aspect-ratio:0.;
+    object-fit: contain;
     object-position: center top;
     margin: 0;
     display: block;
+    max-width: 100%;
   }
   .testi-photo-only img, .testi-img-wide {
     width: 100%;
@@ -707,6 +772,7 @@ p {
   .testi-photo-only {
     padding: 0;
     margin-bottom: 10px;
+    overflow: hidden;
   }
 }
 
@@ -875,4 +941,39 @@ p {
   cursor: pointer;
   color: #aaa;
   margin-left: auto;
+}
+
+/* ---------- FIX: NO MORE WHITE SPACES IN PICTURE REVIEWS ---------- */
+
+.testi-with-photo,
+.testi-photo-only {
+  padding: 0 !important;
+  margin-bottom: 14px !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+  background: #fff !important;
+}
+
+.testi-with-photo img,
+.testi-photo-only img,
+.testi-img,
+.testi-img-wide {
+  width: 100% !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 100% !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.testi-text {
+  padding: 16px !important;
 }
