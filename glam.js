@@ -85,3 +85,36 @@ document.getElementById("proof-close").addEventListener("click", () => {
   popup.classList.remove("show");
 });
 
+
+
+
+
+document.querySelectorAll('img.auto-trim').forEach(img => {
+  if (img.complete) trim(img); else img.addEventListener('load', () => trim(img));
+  function trim(img) {
+    const c = document.createElement('canvas');
+    const ctx = c.getContext('2d');
+    c.width = img.naturalWidth; c.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
+    try {
+      const d = ctx.getImageData(0, 0, c.width, c.height).data;
+      const keep = [];
+      for (let y = 0; y < c.height; y++) {
+        let white = 0, total = 0;
+        for (let x = 0; x < c.width; x += 4) {
+          const i = (y * c.width + x) * 4;
+          total++;
+          if (d[i] > 245 && d[i+1] > 245 && d[i+2] > 245) white++;
+        }
+        if (white / total < 0.97) keep.push(y);
+      }
+      if (keep.length && keep.length < c.height * 0.9) {
+        const c2 = document.createElement('canvas');
+        c2.width = c.width; c2.height = keep.length;
+        const ctx2 = c2.getContext('2d');
+        keep.forEach((y, ny) => ctx2.drawImage(c, 0, y, c.width, 1, 0, ny, c.width, 1));
+        img.src = c2.toDataURL('image/jpeg', 0.9);
+      }
+    } catch(e) {}
+  }
+});
