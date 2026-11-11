@@ -201,7 +201,7 @@ p {
 
 .coach-list li::before {
   content: "•";
-  color: #E91E63;
+  color: #C2410C;
   font-size: 26px;
   font-weight: 700;
   position: absolute;
