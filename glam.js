@@ -45,7 +45,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 // 4. SOCIAL PROOF POPUP - rotates REAL reviews only - CHANGED: Removed 1-1, added Rose/Yetty/Ihuoma
 const proofs = [
-  { text: "I used to pay ₦70k for every event. Now I do my own glam in less than 1 hour!.", name: "Amaka • Lagos • Verified Student" },
+  { text: "I used to pay ₦70k for every event, now it takes me less than an hour to do my own makeup!.", name: "Amaka • Lagos • Verified Student" },
   { text: "My graduation makeup ateeee, all thanks to this class.", name: "Graduation Student • Verified Student" },
   { text: "See what I did with the eyes. I'm an expert now!!!!!!", name: "Real Student • Verified Student" },
   { text: "Soft glam, done by ME. Blush, brows, lips - all me.", name: "Real Student • Verified Student" },
@@ -118,3 +118,16 @@ document.querySelectorAll('img.auto-trim').forEach(img => {
     } catch(e) {}
   }
 });
+
+/* BOLD TIMER */
+setInterval(() => {
+  const d = document.getElementById('d');
+  const h = document.getElementById('h');
+  const m = document.getElementById('m');
+  const s = document.getElementById('s');
+  if (!d) return;
+  document.getElementById('d2').textContent = d.textContent;
+  document.getElementById('h2').textContent = h.textContent;
+  document.getElementById('m2').textContent = m.textContent;
+  document.getElementById('s2').textContent = s.textContent;
+}, 1000);
