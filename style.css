@@ -1,6 +1,6 @@
 /* ============================================================
    THE GLOBAL SELF GLAM EXPERIENCE
-   Main Stylesheet - NEW COLOURS: Brown / Orange / Cream.
+   Main Stylesheet - NEW COLOURS: Brown / Orange / Cream
    ============================================================ */
 
 /* ---------- 1. RESET & BASE ---------- */
@@ -976,4 +976,67 @@ p {
 
 .testi-text {
   padding: 16px !important;
+}
+
+/* ---------- BIG COUNTDOWN - BOLDLY VISIBLE ---------- */
+
+.countdown-big-section {
+  padding: 20px 0 !important;
+}
+
+.countdown-big-card {
+  background: #2E1508;
+  border-radius: 18px;
+  padding: 28px 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.countdown-big-label {
+  color: #FFDCC3;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.countdown-big-timer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.cd-box {
+  background: #FFF7ED;
+  border-radius: 14px;
+  width: 72px;
+  padding: 14px 0 10px;
+  flex: 1;
+  max-width: 80px;
+}
+
+.cd-box span {
+  display: block;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1;
+  color: #C2410C;
+}
+
+.cd-box small {
+  font-size: 12px;
+  color: #2E1508;
+  font-weight: 600;
+}
+
+.countdown-big-expire {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.countdown-big-expire b {
+  color: #FFDCC3;
 }
